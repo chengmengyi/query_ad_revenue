@@ -4,6 +4,9 @@ import 'query_ad_revenue_platform_interface.dart';
 export 'query_ad_revenue_config.dart';
 
 class QueryAdRevenue {
+  static final QueryAdRevenue _adRevenue=QueryAdRevenue();
+  static QueryAdRevenue get instance => _adRevenue;
+
   Future<void> initConfig(QueryAdRevenueConfig config) {
     return QueryAdRevenuePlatform.instance.initConfig(config);
   }
