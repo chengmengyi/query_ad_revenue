@@ -22,10 +22,10 @@ JNI 函数固定为 `Java_com_query_ad_revenue_Query_query`，AdMob 版本固定
 
 ```text
 android/app/src/main/jniLibs/
-├── arm64-v8a/libb03ad.so
-├── armeabi-v7a/libb03ad.so
-├── x86/libb03ad.so
-└── x86_64/libb03ad.so
+├── arm64-v8a/xxx.so
+├── armeabi-v7a/xxx.so
+├── x86/xxx.so
+└── x86_64/xxx.so
 ```
 
 目录按实际支持的 ABI 保留即可。`libName` 只填写中间名称，例如文件是 `libb03ad.so` 时填写 `b03ad`，不要包含 `lib` 前缀或 `.so` 后缀。
