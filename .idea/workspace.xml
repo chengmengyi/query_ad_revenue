@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5aaf01c-7bbc-466e-b73a-979cda97a3fa" name="Changes" comment="0.0.1">
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/query/ad/revenue/query_ad_revenue/QueryAdRevenuePlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/query/ad/revenue/query_ad_revenue/QueryAdRevenuePlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/query_ad_revenue.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/query_ad_revenue.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/query_ad_revenue_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/query_ad_revenue_method_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/query_ad_revenue_platform_interface.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/query_ad_revenue_platform_interface.dart" afterDir="false" />
-    </list>
+    <list default="true" id="f5aaf01c-7bbc-466e-b73a-979cda97a3fa" name="Changes" comment="0.0.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="0.0.1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -34,12 +34,12 @@
     &quot;assignee&quot;: &quot;chengmengyi&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chengmengyi/query_ad_revenue.git",
-    "accountId": "b13b96f1-8ae5-43c0-992d-34d226ebef1c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chengmengyi/query_ad_revenue.git&quot;,
+    &quot;accountId&quot;: &quot;b13b96f1-8ae5-43c0-992d-34d226ebef1c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -50,24 +50,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "0.0.1",
-    "io.flutter.project.isFirstOpen": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/chengmengyi/testbird/plugins/query_ad_revenue",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;0.0.1&quot;,
+    &quot;io.flutter.project.isFirstOpen&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chengmengyi/testbird/plugins/query_ad_revenue&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
@@ -98,7 +99,31 @@
       <option name="project" value="LOCAL" />
       <updated>1788509658914</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0.0.1">
+      <option name="closed" value="true" />
+      <created>1788510253714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788510253714</updated>
+    </task>
+    <task id="LOCAL-00004" summary="0.0.1">
+      <option name="closed" value="true" />
+      <created>1788510274621</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788510274622</updated>
+    </task>
+    <task id="LOCAL-00005" summary="0.0.1">
+      <option name="closed" value="true" />
+      <created>1788510708926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788510708926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

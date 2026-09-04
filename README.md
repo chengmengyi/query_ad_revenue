@@ -42,13 +42,14 @@ dependencies:
 
 ## 4. 初始化配置
 
-查询收益前必须调用一次 `initConfig`，三个 key 列表和 `libName` 都是必传参数：
+查询收益前必须调用一次 `initConfig`。`enableRevenue`、三个 key 列表和 `libName` 都是必传参数：
 
 ```dart
 final queryAdRevenue = QueryAdRevenue();
 
 await queryAdRevenue.initConfig(
   const QueryAdRevenueConfig(
+    enableRevenue: true,
     openKeyList: <String>[
       // AppOpenAd 对应的 key。
     ],
@@ -63,7 +64,7 @@ await queryAdRevenue.initConfig(
 );
 ```
 
-`initConfig` 会在 Android 调用 `System.loadLibrary(libName)`。加载失败时会抛出 `PlatformException`。
+`enableRevenue` 为 `true` 时，`initConfig` 会在 Android 调用 `System.loadLibrary(libName)`，加载失败时会抛出 `PlatformException`。设置为 `false` 时不会初始化 JNI，三个收益查询方法都会直接返回 `0.0`。
 
 ## 5. 查询收益
 
