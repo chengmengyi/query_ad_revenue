@@ -86,7 +86,7 @@ class QueryAdRevenuePlugin :
             result.error("not_initialized", "Call initConfig before querying revenue", null)
             return
         }
-        val adId = call.argument<Int>("adId")
+        val adId = call.argument<String>("adId")?.toIntOrNull()
         val flutterAd = adId?.let(::findGoogleMobileAdsAd)
         val ad = flutterAd?.let { unwrapGoogleMobileAdsAd(call.method, it) }
         if (ad == null) {

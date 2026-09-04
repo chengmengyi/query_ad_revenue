@@ -16,21 +16,21 @@ class MethodChannelQueryAdRevenue extends QueryAdRevenuePlatform {
   }
 
   @override
-  Future<double> getOpenAdRevenue(int adId) {
+  Future<double> getOpenAdRevenue(String adId) {
     return _getAdRevenue('getOpenAdRevenue', adId);
   }
 
   @override
-  Future<double> getIntAdRevenue(int adId) {
+  Future<double> getIntAdRevenue(String adId) {
     return _getAdRevenue('getIntAdRevenue', adId);
   }
 
   @override
-  Future<double> getNativeAdRevenue(int adId) {
+  Future<double> getNativeAdRevenue(String adId) {
     return _getAdRevenue('getNativeAdRevenue', adId);
   }
 
-  Future<double> _getAdRevenue(String method, int adId) async {
+  Future<double> _getAdRevenue(String method, String adId) async {
     return await methodChannel.invokeMethod<double>(method, {'adId': adId}) ??
         -1.0;
   }

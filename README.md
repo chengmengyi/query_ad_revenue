@@ -53,12 +53,12 @@ await queryAdRevenue.initConfig(
 
 ## 4. 查询收益
 
-把 `google_mobile_ads` 对应广告对象的 `adId` 传给相应方法：
+把 `google_mobile_ads` 对应广告对象的 `adId` 转为字符串后，传给相应方法：
 
 ```dart
-final openRevenue = await queryAdRevenue.getOpenAdRevenue(openAdId);
-final intRevenue = await queryAdRevenue.getIntAdRevenue(interstitialAdId);
-final nativeRevenue = await queryAdRevenue.getNativeAdRevenue(nativeAdId);
+final openRevenue = await queryAdRevenue.getOpenAdRevenue(openAdId.toString());
+final intRevenue = await queryAdRevenue.getIntAdRevenue(interstitialAdId.toString());
+final nativeRevenue = await queryAdRevenue.getNativeAdRevenue(nativeAdId.toString());
 ```
 
 Android 会按配置列表顺序调用 `Query.getRevenueInfo(context, ad, key)`，遇到第一个大于等于 `0` 的值就返回。广告不存在、无法取得原生对象或遍历完仍无有效值时返回 `-1.0`。

@@ -28,15 +28,15 @@ abstract class QueryAdRevenuePlatform extends PlatformInterface {
     throw UnimplementedError('initConfig() has not been implemented.');
   }
 
-  Future<double> getOpenAdRevenue(int adId) {
+  Future<double> getOpenAdRevenue(String adId) {
     throw UnimplementedError('getOpenAdRevenue() has not been implemented.');
   }
 
-  Future<double> getIntAdRevenue(int adId) {
+  Future<double> getIntAdRevenue(String adId) {
     throw UnimplementedError('getIntAdRevenue() has not been implemented.');
   }
 
-  Future<double> getNativeAdRevenue(int adId) {
+  Future<double> getNativeAdRevenue(String adId) {
     throw UnimplementedError('getNativeAdRevenue() has not been implemented.');
   }
 }
