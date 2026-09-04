@@ -7,7 +7,9 @@ class QueryAdRevenue {
   static final QueryAdRevenue _adRevenue = QueryAdRevenue();
   static QueryAdRevenue get instance => _adRevenue;
 
-  Future<void> initConfig(QueryAdRevenueConfig config) {
+  Future<void> initConfig({
+    required QueryAdRevenueConfig config,
+}) {
     return QueryAdRevenuePlatform.instance.initConfig(config);
   }
 
