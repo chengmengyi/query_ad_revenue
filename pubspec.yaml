@@ -1,7 +1,7 @@
 name: query_ad_revenue
-description: "A new Flutter project."
+description: "query_ad_revenue"
 version: 0.0.1
-homepage:
+homepage: https://github.com/chengmengyi/query_ad_revenue.git
 
 environment:
   sdk: ^3.9.2
