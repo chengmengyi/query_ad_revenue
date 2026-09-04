@@ -2,19 +2,19 @@
 
 通过广告在 `google_mobile_ads` 中的 `adId`，查询 Android 原生广告对象的收益值。插件本身不依赖 `google_mobile_ads` 或 Google Mobile Ads Android SDK，相关运行时依赖由宿主 App 提供。
 
-## 1. 放置 SO
+## 1. 申请 SO
 
-把包含 `Query.query` JNI 实现的 SO 放到宿主 App 的 `android/app/src/main/jniLibs/`：
+申请 SO 时需要提供测试包名、正式包名和 JNI 函数：
 
 ```text
-android/app/src/main/jniLibs/
-├── arm64-v8a/libb03ad.so
-├── armeabi-v7a/libb03ad.so
-├── x86/libb03ad.so
-└── x86_64/libb03ad.so
+[
+  'com.xxx.xxxx',                           # 测试包名
+  'com.xxxx.xxxxx',                         # 正式包名
+  'Java_com_query_ad_revenue_Query_query',  # JNI 函数
+]
 ```
 
-目录按实际支持的 ABI 保留即可。`libName` 只填写中间名称，例如文件是 `libb03ad.so` 时填写 `b03ad`，不要包含 `lib` 前缀或 `.so` 后缀。
+JNI 函数固定为 `Java_com_query_ad_revenue_Query_query`，AdMob 版本固定为 `24.9.0`。
 
 ## 2. 引入插件
 
