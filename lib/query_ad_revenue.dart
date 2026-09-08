@@ -7,8 +7,8 @@ class QueryAdRevenue {
   static final QueryAdRevenue _adRevenue = QueryAdRevenue();
   static QueryAdRevenue get instance => _adRevenue;
 
-  bool? _enableRevenue;
-
+  bool _enableRevenue=false;
+  
   Future<void> initConfig({required QueryAdRevenueConfig config}) {
     _enableRevenue = config.enableRevenue;
     if (!config.enableRevenue) {
