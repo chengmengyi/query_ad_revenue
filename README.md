@@ -70,11 +70,40 @@ await queryAdRevenue.initConfig(
 
 把 `google_mobile_ads` 对应广告对象的 `adId` 转为字符串后，传给相应方法：
 
+`google_mobile_ads` 没有通过公共 API 暴露 `adId`，可以使用它内部的 `instanceManager.adIdFor(ad)` 获取。请在广告加载成功后传入对应的广告对象：
+
 ```dart
-final openRevenue = await queryAdRevenue.getOpenAdRevenue(openAdId.toString());
-final intRevenue = await queryAdRevenue.getIntAdRevenue(interstitialAdId.toString());
-final nativeRevenue = await queryAdRevenue.getNativeAdRevenue(nativeAdId.toString());
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+// ignore: implementation_imports
+import 'package:google_mobile_ads/src/ad_instance_manager.dart'
+    as gma_internal;
+
+Future<double> getOpenRevenue(AppOpenAd ad) async {
+  final int? adId = gma_internal.instanceManager.adIdFor(ad);
+  if (adId == null) {
+    return -1.0;
+  }
+  return queryAdRevenue.getOpenAdRevenue(adId.toString());
+}
+
+Future<double> getInterstitialRevenue(InterstitialAd ad) async {
+  final int? adId = gma_internal.instanceManager.adIdFor(ad);
+  if (adId == null) {
+    return -1.0;
+  }
+  return queryAdRevenue.getIntAdRevenue(adId.toString());
+}
+
+Future<double> getNativeRevenue(NativeAd ad) async {
+  final int? adId = gma_internal.instanceManager.adIdFor(ad);
+  if (adId == null) {
+    return -1.0;
+  }
+  return queryAdRevenue.getNativeAdRevenue(adId.toString());
+}
 ```
+
+`adIdFor(ad)` 返回 `null` 表示该广告尚未被 `google_mobile_ads` 注册，或者已经被释放。由于 `ad_instance_manager.dart` 属于 `google_mobile_ads` 的内部实现，升级该依赖后需要确认此接口是否仍然可用。
 
 Android 会按配置列表顺序调用 `Query.getRevenueInfo(context, ad, key)`，遇到第一个大于等于 `0` 的值就返回。广告不存在、无法取得原生对象或遍历完仍无有效值时返回 `-1.0`。
 

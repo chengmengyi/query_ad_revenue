@@ -1,6 +1,6 @@
 name: query_ad_revenue
 description: "query_ad_revenue"
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/chengmengyi/query_ad_revenue.git
 
 environment:

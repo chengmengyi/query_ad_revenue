@@ -5,7 +5,7 @@
   "packages": [
     {
       "name": "query_ad_revenue",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "dependencies": [
         "flutter",
         "plugin_platform_interface"
